@@ -44,6 +44,7 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
+$rose-red: #FF5733;
 
 h1 {
   font-size: 3em;
@@ -58,7 +59,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: $rose-red;
 }
 
 p {
@@ -71,9 +72,9 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: $rose-red;
   a {
-    color: #555;
+    color: #0329FF;
     &:hover {
       color: #222;
     }
