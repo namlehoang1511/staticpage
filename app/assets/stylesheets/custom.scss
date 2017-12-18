@@ -1,8 +1,8 @@
 @import "bootstrap-sprockets";
-@import "bootstrap-sprockets";
 @import "bootstrap";
 
 /* universal */
+
 
 body {
   padding-top: 60px;
@@ -19,22 +19,25 @@ textarea {
 .center {
   text-align: center;
   h1 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
   }
 }
 /* header */
-
+$white: #fff;
+$rose-red: #FF5733;
 #logo {
+  color: $white;
   float: left;
-  margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
+  
   font-weight: bold;
+  letter-spacing: -1px;
+  margin-right: 10px;
+  
+  padding-top: 9px;
+  text-transform: uppercase;
   &:hover {
-    color: #fff;
+    color: $white;
     text-decoration: none;
   }
 }
@@ -44,7 +47,6 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
-$rose-red: #FF5733;
 
 h1 {
   font-size: 3em;
@@ -54,12 +56,14 @@ h1 {
 }
 
 h2 {
+  color: $rose-red;
   font-size: 1.2em;
+  font-weight: normal;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
-  font-weight: normal;
-  color: $rose-red;
+  
+  
 }
 
 p {
@@ -69,10 +73,12 @@ p {
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: $rose-red;
+  margin-top: 45px;
+  padding-top: 5px;
+  
+  
   a {
     color: #0329FF;
     &:hover {
