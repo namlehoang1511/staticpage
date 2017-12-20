@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
+  
   get 'user/new'
   get  "/help",    to: "staticpage#help", as: "helf"
   get  "/about",   to: "staticpage#about"
   get  "/contact",  to: "staticpage#contact"
   get  "/signup",  to: "user#new"
   root "staticpage#home"
-  resources :users
-
+  resources :user, only: [:show, :create, :update]
 end
